@@ -40,10 +40,10 @@ public class Main {
         long p90Run = runTimes[(int) (N * 0.90)];
         long p99Run = runTimes[(int) (N * 0.99)];
 
-        System.out.println("RESULTADOS PARA N = " + N + " ns");
-        System.out.printf("ExtThread -> Promedio: %.2f ns | P50: %d ns | P90: %d ns | P99: %d ns\n",
+        System.out.println("RESULTS FOR N = " + N + " ns");
+        System.out.printf("ExtThread -> Median: %.2f ns | P50: %d ns | P90: %d ns | P99: %d ns\n",
                 avgExt, p50Ext, p90Ext, p99Ext);
-        System.out.printf("RunTask   -> Promedio: %.2f ns | P50: %d ns | P90: %d ns | P99: %d ns\n",
+        System.out.printf("RunTask   -> Median: %.2f ns | P50: %d ns | P90: %d ns | P99: %d ns\n",
                 avgRun, p50Run, p90Run, p99Run);
     }
 
